@@ -86,7 +86,7 @@ if(interaction.isButton()){
 Client.on("guildMemberAdd", member => {
     console.log("Un membre a rejoint le serveur!");
 
-    Client.channels.cache.get("926260363958317089").send("<@" + member.id + ">, merci d'avoir rejoins MiniaServ! J'espère que tu trouveras ton bonheur")
+    Client.channels.cache.get("926260363958317089").send("<@" + member.id + ">, merci d'avoir rejoins MiniaServ! J'espère que tu trouveras ton bonheur. N'oublie pas d'aller dans le salon #⚡┃role-reaction")
 });
 
 Client.on("guildMemberRemove", member => {
