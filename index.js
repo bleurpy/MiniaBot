@@ -57,12 +57,12 @@ message.channel.send({content: "**Rôle réaction** / _appuyer sur le bouton qui
 Client.on("interactionCreate", interaction => {
 if(interaction.isButton()){
  if (interaction.customId === "boutonClient"){
-    interaction.reply({ content: 'vous avez maintenant le rôle Client Gratuit', ephemeral: true })
+    interaction.reply({ content: 'vous avez maintenant le rôle Client Gratuit (vous pouvez désormais effectuer une commande mais avec une limitation de ce que vous demandez.)', ephemeral: true })
      interaction.member.roles.add("927948363037548644")
  }
 
  if (interaction.customId === "boutonClientPayant"){
-    interaction.reply({ content: 'vous avez maintenant le rôle Client Payant (vous pouvez désormais effectuer une commande limitée.)', ephemeral: true })
+    interaction.reply({ content: 'vous avez maintenant le rôle Client Payant', ephemeral: true })
      interaction.member.roles.add("951397149705396224")
  }
 
